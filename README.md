@@ -28,7 +28,7 @@ screened-poisson-mesh-fairing/
 
 Evaluated across four Stanford 3D models using logarithmically spaced smoothing parameters to generate 60 FPS, 5-second smoothing animations:
 
-* **High-Resolution Models ^:** Smooths the Happy Buddha model (543,652 vertices, 1,087,716 triangles) in 30 minutes total execution time.
+* **Runtime:** Smooths the Happy Buddha model (543,652 vertices, 1,087,716 triangles) in 30 minutes total execution time.
 * **Feature Preservation:** Eliminates high-frequency surface noise while retaining macro-scale shape structures without structural collapse.
 
 ## Getting Started
