@@ -2,16 +2,12 @@
 
 An end-to-end MATLAB simulation pipeline for 3D surface mesh fairing. This project parses `.ply` geometry files, computes discrete differential operators (Laplace-Beltrami and mass matrices), and solves the Screened Poisson equation to perform parameter-controlled surface smoothing.
 
-For the complete mathematical background, refer to the following [report](docs/theory.pdf).
+For the complete mathematical background, refer to the following [report](docs/theory.pdf). This project was inspired from online discrete differential geometry (DDG) course notes from [Columbia University](https://ddg.cs.columbia.edu/SGP2014/LaplaceBeltrami.pdf) and [Carnegie Mellon University](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/paper.pdf).
 
 ## Repository Structure
 
 ```
 screened-poisson-mesh-fairing/
-├── src/
-│   ├── laplacian.m             % Computes Laplace-Beltrami and mass matrices
-│   ├── load_mesh.m             % Parser for 3D .ply polygon models
-│   └── poisson_smooth.m        % Screened Poisson mesh smoothing solver
 ├── docs/
 │   ├── theory.pdf              % Compiled LaTeX technical report detailing discrete differential operators and the Screened Poisson system
 │   └── theory.tex              % LaTeX source code
@@ -20,11 +16,17 @@ screened-poisson-mesh-fairing/
 │   ├── buddha_smooth.mp4
 │   ├── bunny_smooth.mp4
 │   └── dragon_smooth.mp4
+├── src/
+│   ├── laplacian.m             % Computes Laplace-Beltrami and mass matrices
+│   ├── load_mesh.m             % Parser for 3D .ply polygon models
+│   └── poisson_smooth.m        % Screened Poisson mesh smoothing solver
 ├── LICENSE                     % MIT License
 └── README.md
 ```
 
 ## Benchmarks & Performance
+
+![Simulation Thumbnail](simulations/thumbnail.jpeg)
 
 Evaluated across four Stanford 3D models using logarithmically spaced smoothing parameters to generate 60 FPS, 5-second smoothing animations:
 
