@@ -13,7 +13,7 @@ screened-poisson-mesh-fairing/
 │   ├── load_mesh.m             % Parser for 3D .ply polygon models
 │   └── poisson_smooth.m        % Screened Poisson mesh smoothing solver
 ├── docs/
-│   ├── theory.pdf              % Compiled LaTeX technical report detailing discrete differential operators and Screened Poisson formulation
+│   ├── theory.pdf              % Compiled LaTeX technical report detailing discrete differential operators and the Screened Poisson system
 │   └── theory.tex              % LaTeX source code
 ├── simulations/                % Rendered MP4 smoothing animations
 │   ├── armadillo_smooth.mp4
